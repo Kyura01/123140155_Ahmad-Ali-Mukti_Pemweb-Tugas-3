@@ -1,0 +1,52 @@
+#root { width: 100%; margin: 0 auto; text-align: left; }
+body { background-color: #f0f2f5; color: #333; font-family: 'Inter', sans-serif; }
+
+.container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+header { text-align: center; margin-bottom: 30px; }
+h1 { color: #1a1a1a; margin-bottom: 5px; }
+
+.card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+textarea { width: 100%; padding: 15px; border: 2px solid #e1e4e8; border-radius: 8px; font-size: 16px; margin-bottom: 15px; resize: vertical; box-sizing: border-box;}
+textarea:focus { border-color: #007bff; outline: none; }
+
+button { background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.2s; }
+button:hover { background: #0056b3; }
+button:disabled { background: #ccc; cursor: not-allowed; }
+
+.error-msg { color: #d32f2f; margin-top: 10px; font-size: 0.9em; }
+
+.results-section { margin-top: 40px; }
+.review-card { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #eee; }
+
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.badge { padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; }
+.badge.positive { background: #e6f4ea; color: #1e7e34; }
+.badge.negative { background: #fbe9eb; color: #dc3545; }
+.badge.neutral { background: #eef0f3; color: #6c757d; }
+
+.original-text { font-size: 1.1em; color: #2d3436; margin-bottom: 20px; line-height: 1.5; }
+.ai-insight { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #6c5ce7; font-size: 0.95em; color: #444; }
+
+/* Filter Buttons */
+.filter-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+.filter-btn { 
+  background: #f0f2f5; 
+  color: #333; 
+  border: 2px solid #e1e4e8; 
+  padding: 8px 16px; 
+  border-radius: 20px; 
+  font-size: 14px; 
+  font-weight: 600; 
+  cursor: pointer; 
+  width: auto;
+  transition: all 0.2s;
+}
+.filter-btn:hover { background: #e1e4e8; }
+.filter-btn.active { 
+  background: #007bff; 
+  color: white; 
+  border-color: #007bff;
+}
+.filter-btn.positive.active { background: #28a745; border-color: #28a745; }
+.filter-btn.neutral.active { background: #6c757d; border-color: #6c757d; }
+.filter-btn.negative.active { background: #dc3545; border-color: #dc3545; }
